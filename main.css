@@ -1,0 +1,159 @@
+body {
+ height: 5000px;
+ background-color: #e0e3e5;
+ font-family: sans-serif;
+}
+
+.DMBlue, .DMBlue2 {
+  color: #242e42;
+}
+
+.DMBlue {
+  font-size: 1.45em;
+  margin-bottom: 0px;
+}
+
+.DMBlue2 {
+  font-size: 1.1em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#clip {
+  margin-top: 0px;
+  margin-left: 30%;
+  position: fixed;
+  z-index: 5;
+}
+
+#clip img {
+  width: 100px;
+  height: auto;
+  transform: rotate(-45deg);
+}
+
+#page1 , #page2 , #page3, #page4 {
+  width: 500px;
+  height: 700px;
+  background-color: whitesmoke;
+  box-shadow: -5px 5px 5px #bfbfbf;
+  position: fixed;
+  display: grid;
+  justify-content: center;
+}
+
+#page1 {
+ margin-top: 20px;
+ margin-left: 33%;
+ z-index: 4;
+ text-align: center;
+ align-content: center;
+}
+
+#page1 img , #page2 img {
+  width: 400px;
+  height: auto;
+}
+
+#page2 {
+  margin-top: 30px;
+  margin-left: 32.5%;
+  z-index: 3;
+  text-align: center;
+  align-content: center;
+}
+
+#page2 img {
+  margin-top: 210px;
+  border: 1px solid #d9d9d9;
+}
+
+#page2 div {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .8em;
+  color: #242e42;
+}
+
+#page3 {
+  margin-top: 40px;
+  margin-left: 32%;
+  z-index: 2;
+  align-content: flex-end;
+  text-align: center;
+}
+
+#page3 div {
+  width: 220px;
+  margin: 20px auto 40px auto;
+  font-size: .8em;
+  color: #242e42;
+}
+
+#page3 img {
+  width: 200px;
+  height: auto;
+}
+
+#page4 {
+  margin-top: 50px;
+  margin-left: 31.5%;
+  z-index: 1;
+  background-image: url(images/paper.jpeg);
+  background-size: cover;
+  align-content: flex-end;
+}
+
+#page4 div {
+  width: 220px;
+  margin: 20px auto 20px auto;
+  font-size: .8em;
+  text-align: center;
+}
+
+#page4 p , #page4 h4 {
+  margin: 3px 0 2px 0;
+  color: #242e42;
+}
+
+#postIt {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  z-index: 0;
+  margin-top: 40%;
+  margin-left: 50%;
+  background-color: #f5f5a3;
+  box-shadow: -5px 5px 5px #bfbfbf;
+  transform: rotate(-3deg);
+  transition: transform .5s;
+}
+
+#postIt:hover {
+  transform: rotate(-1deg);
+}
+
+#postIt:active {
+  box-shadow: -2px 2px 5px #bfbfbf;
+}
+
+#postIt p {
+  font-size: .3em;
+  color: #242e42;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: relative;
+  top: 100%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+  color: grey;
+}
